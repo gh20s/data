@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__
+.pytest_cache
+.eggs
+*.egg-info/
+
+# Environments
+.venv
+.env
+.env.*
+configuration.json
+
+# Node packages
+node_modules
+
+# Vue build and test artifacts:
+dist/
+**/tests/e2e/reports
+
+# Unit test / coverage reports
+**/coverage/**
+.coverage
+htmlcov
+coverage.xml
+testresults.xml
+
+selenium-debug.log
+chromedriver.log
+geckodriver.log
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+!/ppr-ui/.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.classpath
+.project
+.settings/
+.history
+
+# Ignore Gradle project-specific cache and build directories
+/**/.gradle
+/**/build
+/**/.allure
+
+#OS Files
+.DS_Store
+testing/functional/src/test/groovy/specs/StartSpec.groovy
