@@ -1,0 +1,17 @@
+version: "3.1"
+
+services:
+  ####################### Test Database Definition #######################
+  test_data_db:
+    image: postgres:11
+    restart: always
+    environment:
+      POSTGRES_DB: data
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - test_data_db:/var/lib/postgresql/data
+
+volumes:
+  test_data_db:
