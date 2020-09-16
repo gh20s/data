@@ -19,14 +19,12 @@ depends_on = None
 
 def upgrade():
     op.create_table(
-        'search',
-        sa.Column('id', postgresql.UUID, primary_key=True),
+        'corporation',
+        sa.Column('corp_num', postgresql.TEXT, primary_key=True),
         sa.Column('type', sa.String(length=40), nullable=False),
-        sa.Column('criteria_value', postgresql.TEXT),
-        sa.Column('debtor_first_name', postgresql.TEXT),
-        sa.Column('debtor_second_name', postgresql.TEXT),
-        sa.Column('debtor_last_name', postgresql.TEXT),
-        sa.Column('creation_date_time', sa.DateTime(timezone=True), server_default=sa.text("NOW()"), nullable=False)
+        sa.Column('recognition_date', sa.DateTime),
+        sa.Column('bn15', postgresql.TEXT),
+        sa.Column('email', postgresql.TEXT)
     )
 
 
